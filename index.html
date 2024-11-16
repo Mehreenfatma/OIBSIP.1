@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fraud Detection Dashboard</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      background-color: #f4f4f9;
+      color: #333;
+    }
+    .header {
+      background-color: #4CAF50;
+      padding: 1rem;
+      text-align: center;
+      color: #fff;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1200px;
+      margin-top: 2rem;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      padding: 1.5rem;
+      text-align: center;
+    }
+    .card h2 {
+      margin-bottom: 1rem;
+      font-size: 1.25rem;
+      color: #4CAF50;
+    }
+    .card p {
+      font-size: 1rem;
+    }
+    .footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      color: #fff;
+      background-color: #4CAF50;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Fraud Detection Dashboard</h1>
+  </div>
+
+  <!-- Container -->
+  <div class="container">
+    
+    <!-- Key Metrics Dashboard -->
+    <div class="dashboard">
+      
+      <!-- Card: Alerts -->
+      <div class="card">
+        <h2>Alerts</h2>
+        <p>Recent Fraud Alerts: <strong>23</strong></p>
+        <a href="#" class="btn">View Alerts</a>
+      </div>
+      
+      <!-- Card: Accuracy -->
+      <div class="card">
+        <h2>Model Accuracy</h2>
+        <p>Current Accuracy: <strong>97.2%</strong></p>
+        <a href="#" class="btn">Model Performance</a>
+      </div>
+      
+      <!-- Card: Transactions -->
+      <div class="card">
+        <h2>Transactions Monitored</h2>
+        <p>Transactions Today: <strong>5,432</strong></p>
+        <a href="#" class="btn">View Details</a>
+      </div>
+      
+    </div>
+
+    <!-- User Actions -->
+    <div class="dashboard" style="grid-template-columns: 1fr;">
+      <div class="card">
+        <h2>Investigate Transactions</h2>
+        <p>Review flagged transactions and generate detailed reports on suspicious activities.</p>
+        <a href="#" class="btn">Investigate Now</a>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>&copy; 2024 Fraud Detection System. All rights reserved.</p>
+  </div>
+
+</body>
+</html>
